@@ -481,14 +481,14 @@ class compression:
                                             size_data11=size_data9
                                             Find_guess=1
                                         elif long_file<=long_after:
-                                            size_data3=size_data10
+                                            size_data3=size_data9
                                             long_block=long_block+1
-                                            
+                                            times_of_times=times_of_times+1
                                             size_data9=""
                                             size_data19=""
                                             start=-1
                                             times_compression=0
-                                            predict=-1
+                                            
                                             
                                         elif long_file>long_after:
                                             size_data3=size_data9
@@ -498,7 +498,7 @@ class compression:
                                             size_data19=""
                                             start=-1
                                             times_compression=0
-                                            predict=-1    
+                                               
        
                                     size_data24=bin(times_of_times)[2:]
                                     lenf=len(size_data24)
