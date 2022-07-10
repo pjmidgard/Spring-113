@@ -13,8 +13,8 @@ class compression:
                 self.name = "Author: Jurijus pacalovas"
                 
                 if namez=="c":
-                    corridors=0
-                    cor=7
+                   
+                   
                     name = input("What is name of file? ")
                     if os.path.exists(name):
                             print('Path is exists!')
@@ -547,8 +547,8 @@ class compression:
 
     def cryptograpy_unpack(self):                      
                  if namez=="e":
-                    corridors=0
-                    cor=7
+                  
+                    
                     name = input("What is name of file? ")
                     if os.path.exists(name):
                             print('Path is exists!')
