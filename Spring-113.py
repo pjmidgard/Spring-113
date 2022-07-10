@@ -1,3 +1,6 @@
+#sda information data
+#Deep100 blocks
+#Deep101 Time exract
 from time import time
 cvf=0
 import os
