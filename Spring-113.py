@@ -857,11 +857,13 @@ class compression:
                                                                                     str_find_tree_maches1=size_data3[block:block+blocks]
                                                                                     block_find=block_find+1
                                                                                     sub_info="01"
+                                                                                    find_matches_move=str_find_tree_maches1[+1:]+str_find_tree_maches1[:+1]
                                                                                     
 
-                                                                                    find_matches1=str_find_tree_maches1.find(sub_info, start, end)
-                                                                                    find_matches1_1=int(find_matches1)
-                                                                                    find_matches_move=find_matches1_1[+1:]+find_matches1_1[:+1]
+                                                                                    find_matches1=find_matches_move.find(sub_info, start, end)
+                                                                                    find_matches_move2=int(find_matches1)
+                                                                                    find_matches_move1=find_matches_move2
+                                                                                    
                                                                                     
                                                                                     
 
@@ -894,7 +896,7 @@ class compression:
                                                                                           
                                                                                             Infromation_program=Infromation_program[Program+Left:]
                                                                                 
-                                                                                    if find_matches_move==0 and block_find!=Have_number:
+                                                                                    if find_matches_move1==0 and block_find!=Have_number:
                                                                                         size_data4=find_matches_move[:0]+b+find_matches_move[2:]
                                                                                         size_data12=size_data12+size_data4
                                                                                         
