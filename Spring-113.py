@@ -488,6 +488,7 @@ class compression:
                                             size_data19=""
                                             start=-1
                                             times_compression=0
+                                            predict=-1 
                                             
                                             
                                         elif long_file>long_after:
@@ -498,6 +499,7 @@ class compression:
                                             size_data19=""
                                             start=-1
                                             times_compression=0
+                                            predict=-1
                                                
        
                                     size_data24=bin(times_of_times)[2:]
