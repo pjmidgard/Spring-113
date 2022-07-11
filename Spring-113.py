@@ -902,6 +902,7 @@ class compression:
                                                                                         
                                                                                        
                                                                                         blocks2=blocks-2
+                                                                                        block=block+blocks2
                                                                                         
                                                                                     else:
                                                                                         size_data4=find_matches_move
