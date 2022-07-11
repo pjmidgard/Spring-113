@@ -834,6 +834,7 @@ class compression:
                                                                                                                                             
                     
                                                         block=0
+                                                        block_find=0
                                                         b=Save_predict_find[times_compression*4:(times_compression*4)+4]
                                                         
                                                         Find=1
@@ -854,11 +855,15 @@ class compression:
                                                         
                                                         while block<=long:
                                                                                     str_find_tree_maches1=size_data3[block:block+blocks]
+                                                                                    block_find=block_find+1
                                                                                     sub_info="01"
                                                                                     
 
                                                                                     find_matches1=str_find_tree_maches1.find(sub_info, start, end)
                                                                                     find_matches1_1=int(find_matches1)
+                                                                                    find_matches_move=find_matches1_1[+1:]+find_matches1_1[:+1]
+                                                                                    
+                                                                                    
 
                                                                                     Binary_code2=""
                                                                                     blocks2=0
@@ -889,15 +894,15 @@ class compression:
                                                                                           
                                                                                             Infromation_program=Infromation_program[Program+Left:]
                                                                                 
-                                                                                    if find_matches1_1==0 and block!=Have_number:
-                                                                                        size_data4=str_find_tree_maches1[:0]+b+str_find_tree_maches[2:]
+                                                                                    if find_matches_move==0 and block_find!=Have_number:
+                                                                                        size_data4=find_matches_move[:0]+b+find_matches_move[2:]
                                                                                         size_data12=size_data12+size_data4
                                                                                         
                                                                                        
                                                                                         blocks2=blocks-2
                                                                                         
                                                                                     else:
-                                                                                        size_data4=str_find_tree_maches1
+                                                                                        size_data4=find_matches_move
                                                                                         size_data12=size_data12+size_data4
                                                                                         
                                                                                         
@@ -909,7 +914,7 @@ class compression:
                                                         times_compression=times_compression+1
                                                         #print(times_compression)
                                                         size_data3=size_data12
-                                                        print(size_data12)
+                                                        #print(size_data12)
                                                         
                                                         
                                                         
