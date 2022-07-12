@@ -713,16 +713,18 @@ class compression:
                                     size_data3=size_data3[40:]
                                     Times_extract_number=0
                                     Times_extract_number=int(Times_extract_of_times,2)
-                                    Time_extract=0
+                                    Times_extract=0
                                     Times_extract=Times_extract_number
                               
                                        
                                     Times_count=0
-                                    while Times_extract<=Times_count:
+                                    while Times_extract!=Times_count:
 
                                         Blocks_long=size_data3[0:40]
                                         size_data3=size_data3[40:]
+                                        
                                         Blocks_long_number=int(Blocks_long,2)
+                                        
                                         Read_times_compression_info=""
                                         
                                         Read_times_compression_info=size_data3[0:40]
@@ -772,13 +774,17 @@ class compression:
 
 
                                         open_binary_code_01=size_data3[0:40]
+                                        
+                                        
                                        
                                         
                                         open_binary_code_01_number=int(open_binary_code_01,2)
                                         
                                         size_data3=size_data3[40:]
                                         long_open_binary_code=open_binary_code_01_number
+                                        
                                         Infromation_program=size_data3[:long_open_binary_code]
+                                        
                                         Program=0
                                         Binary_code=""
                                         size_data3=size_data3[long_open_binary_code:]
@@ -818,7 +824,7 @@ class compression:
                                           
                                         
                                             start=-1
-                                            while  times_compression<=times2:
+                                            while  times_compression!=times2:
 
                                                         start=0
                                                         blocks=Blocks_long_number
@@ -853,11 +859,12 @@ class compression:
                                                         Infromation_program=Binary_code
                                                         Long_Info=len(Infromation_program)
                                                         
-                                                        while block<=long:
+                                                        while block<long:
                                                                                     str_find_tree_maches1=size_data3[block:block+blocks]
                                                                                     block_find=block_find+1
                                                                                     sub_info="01"
                                                                                     find_matches_move=str_find_tree_maches1[+1:]+str_find_tree_maches1[:+1]
+                                                                                    
                                                                                     
 
                                                                                     find_matches1=find_matches_move.find(sub_info, start, end)
@@ -871,9 +878,14 @@ class compression:
                                                                                     blocks2=0
                                                                                     Have_number=-1
                                                                                     Program=0
+                                                                                    Strart_read=0
                                                                                     
-                                                                                    if Long_Info!=0:
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    if Strart_read==0:
                                                                                         Program_code1=Infromation_program[Program:Program+1]
+                                                                                        
                                                                                         if Program_code1=="1":
                                                                                             Program=Program+1
                                                                                             Program_code_6_bits=Infromation_program[Program:Program+6]
@@ -893,6 +905,8 @@ class compression:
                                                                                             
 
                                                                                             Have_number=int(Binary_code2,2)
+                                                                                            #print(Have_number)
+                                                                                            
                                                                                           
                                                                                             Infromation_program=Infromation_program[Program+Left:]
                                                                                 
@@ -902,8 +916,9 @@ class compression:
                                                                                         size_data12=size_data12+size_data4[:long_find-2]
                                                                                         
                                                                                         
+                                                                                        
                                                                                        
-                                                                                        blocks2=blocks-2
+                                                                                        blocks2=long_find-2
                                                                                         block=block+blocks2
                                                                                         
                                                                                     else:
