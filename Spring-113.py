@@ -476,30 +476,12 @@ class compression:
                                         long_after=len(size_data9)
                                         #print(long_after)
                                         
-                                        if long_file>long_after and long_after<=168 or lenf>39 or long_block>=long_after:
+                                        if long_file>long_after or long_file<=long_after:
                                           
                                             size_data11=size_data9
                                             Find_guess=1
-                                        elif long_file<=long_after:
-                                            size_data3=size_data10
-                                            long_block=long_block+1
-                                            
-                                            size_data9=""
-                                            size_data19=""
-                                            start=-1
-                                            times_compression=0
-                                            predict=-1 
-                                            
-                                            
-                                        elif long_file>long_after:
-                                            size_data3=size_data9
-                                            long_block=long_block+1
                                             times_of_times=times_of_times+1
-                                            size_data9=""
-                                            size_data19=""
-                                            start=-1
-                                            times_compression=0
-                                            predict=-1
+                
                                                
        
                                     size_data24=bin(times_of_times)[2:]
@@ -902,6 +884,7 @@ class compression:
                                                                                             Secret_left=Infromation_program[Program:Program+Left]
                                                                                             Binary_code1=Secret_left+Binary_code1
                                                                                             Binary_code2=Secret_left+Binary_code2
+                                                                                            Program=Program+Left
                                                                                             
 
                                                                                             Have_number=int(Binary_code2,2)
@@ -917,6 +900,7 @@ class compression:
                                                                                         
                                                                                         
                                                                                         
+                                                                                        
                                                                                        
                                                                                         blocks2=long_find-2
                                                                                         block=block+blocks2
@@ -928,18 +912,21 @@ class compression:
                                                                                         size_data12=size_data12+size_data4
                                                                                         
                                                                                         blocks2=blocks
+                                                                                        block=block+blocks2
                                                                                         
                                                                                     
-                                                                                    block=block+blocks2
+                                                                                    
                                                                                     
                                                         times_compression=times_compression+1
                                                         #print(times_compression)
                                                         size_data3=size_data12
-                                                        #print(size_data12)
+                                                       
+                                                       
+                                                     
                                                         
                                                         
                                                         
-                                                        size_data12=""
+                                                        
                                                         
 
                                         Times_count=Times_count+1
