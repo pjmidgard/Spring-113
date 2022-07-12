@@ -898,7 +898,9 @@ class compression:
                                                                                 
                                                                                     if find_matches_move1==0 and block_find!=Have_number:
                                                                                         size_data4=find_matches_move[:0]+b+find_matches_move[2:]
-                                                                                        size_data12=size_data12+size_data4
+                                                                                        long_find=len(size_data4)
+                                                                                        size_data12=size_data12+size_data4[:long_find-2]
+                                                                                        
                                                                                         
                                                                                        
                                                                                         blocks2=blocks-2
@@ -906,8 +908,9 @@ class compression:
                                                                                         
                                                                                     else:
                                                                                         size_data4=find_matches_move
-                                                                                        size_data12=size_data12+size_data4
                                                                                         
+                                                                                      
+                                                                                        size_data12=size_data12+size_data4
                                                                                         
                                                                                         blocks2=blocks
                                                                                         
