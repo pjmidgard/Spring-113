@@ -356,7 +356,7 @@ class compression:
                                                                                 #print(block)
                                                          
                                                     times_compression=times_compression+1
-                                                    sda19="0"+sda19
+                                                   
                                                     #print(times_compression)
                                                     
                                                     
@@ -379,26 +379,9 @@ class compression:
                                             sda9="1"+sda3
 
                                         #print(sda9)
-                                        long=len(sda19)    
-                                        sda21=bin(long)[2:]
-                                        lenf=len(sda21)
-                                        if lenf>40:
-                                                print("File too big")
-                                                raise SystemExit
-                                                                                        
-                                                                                       
-                                                                                    
-                                        add_bits118=""
-                                        count_bits=40-lenf%40
-                                        z=0
-                                        if count_bits!=0:
-                                            if count_bits!=40:
-                                                while z<count_bits:
-                                                    add_bits118="0"+add_bits118
-                                                    z=z+1
-                                                    
-                                        sda22=add_bits118+sda21+sda19     
-                                        sda9="1"+sda22+sda9
+
+                           
+                                        sda9="1"+sda9
 
                                         
                                         lenf=len(sda9)
