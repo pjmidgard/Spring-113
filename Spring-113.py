@@ -282,11 +282,11 @@ class compression:
                                                                                         
 
                                                                                             
-                                                                                            Find=1
+                                                                                            Find=2
 
                                                                                     
                                                                                     
-                                                                                if Find==1:
+                                                                                if Find==2:
                                                                                     
                                                                                     
 
@@ -305,8 +305,8 @@ class compression:
                                                                                     sda12=""
                                                                                     sda4=""
                                                                                     block_compression2=0
-                                                                                    Find=1                                                                                                                         
-                                                                                if Find==0:
+                                                                                    Find=1                                                                                                                    
+                                                                                if Find==1:
                                                                                     
                                                                                     
 
