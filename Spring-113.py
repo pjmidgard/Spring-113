@@ -365,10 +365,13 @@ class compression:
                                                                                                                      
                                                                                     find_matches3=int(size_data4.find(sub_info1, start, end))
                                                                                     if find_matches3==1 and Where5!=Where4:
+                                                                                    	                                                         	
+                                                                                    	
                                                                                     	
                                  
                                                                                     
-                                                                                            size_data20=bin(Where4)[2:]
+                                                                                            size_data20=bin(Where4)[2:]                                                                             	
+                           
                                                                                             lenf=len(size_data20)
                                                                                             if lenf>size_compress:
                                                                                                 print("File too big")
