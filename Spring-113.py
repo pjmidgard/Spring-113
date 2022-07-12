@@ -204,7 +204,7 @@ class compression:
                                     Find_guess=0
                                     while Find_guess!=1:
                                         
-                                        while  times_compression!=times2 and len(size_data3)>=184:
+                                        while  times_compression!=1:
 
 
                                                     
@@ -921,23 +921,7 @@ class compression:
                                                         #print(times_compression)
                                                         size_data3=size_data12
                                                         size_data12=""
-                                                        open_binary_code_01=size_data3[0:40]
-                                        
-                                        
-                                       
-                                        
-                                                         
-                                                        open_binary_code_01_number=int(open_binary_code_01,2)
-                                        
-                                                        size_data3=size_data3[40:]
-                                                        long_open_binary_code=open_binary_code_01_number
-                                        
-                                                        Infromation_program=size_data3[:long_open_binary_code]
-                                        
-                                                        Program=0
-                                                        Binary_code=""
-                                                        size_data3=size_data3[long_open_binary_code:]
-                                                        Binary_code=Infromation_program
+                                                        
                                                        
                                                        
                                                      
