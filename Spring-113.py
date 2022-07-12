@@ -386,7 +386,7 @@ class compression:
                                                          
                                                         
                 
-                                                    size_data3="11111111"+size_data6
+                                                    size_data3="1"+size_data6
                                                     
                                                     Where4=0
                                                     
