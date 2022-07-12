@@ -239,6 +239,8 @@ class compression:
                                                     
                                                     while block<long:
                                                                                 str_find_tree_maches=size_data3[block:block+blocks]
+                                                                                Where4=Where4+1
+             
                                                                                 if b[0:2]=="01":
                                                                                     b="10"+b[2:]
                                                                                 
@@ -266,8 +268,7 @@ class compression:
                                                                                         
                                                                                        
                                                                                         
-                                                                                        Where4=Where4+1
-                                                                                        
+                                                                                                                 
                                                                                   
                                                                          
                                                                                      
