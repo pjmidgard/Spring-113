@@ -337,7 +337,7 @@ class compression:
                                                                                     
 
                                                                                         
-                                                                                    size_data4 = size_data4[-1:] + size_data4[:-1]    
+                                                                                     
                                                                                     
                                                                                     compress_yes=compress_yes+1   
                                                                                     size_data6+size_data6+size_data4                                                     
@@ -360,56 +360,9 @@ class compression:
                                                                                     
                                                                                     
                                                                                     size_data4=str_find_tree_maches
-                                                                                    size_data4= size_data4[-1:] + size_data4[:-1] 
-                                                                                    sub_info1="01" 
-                                                                                                                     
-                                                                                    find_matches3=int(size_data4.find(sub_info1, start, end))
-                                                                                    if find_matches3==1 and Where5!=Where4:
-                                                                                    	                                                         	
-                                                                                    	
-                                                                                    	
-                                 
                                                                                     
-                                                                                            size_data20=bin(Where4)[2:]                                                                             	
-                           
-                                                                                            lenf=len(size_data20)
-                                                                                            if lenf>size_compress:
-                                                                                                print("File too big")
-                                                                                                raise SystemExit
-                                                                                                
-                                                                                                
-                                                                                            
-                                                                                            add_bits118=""
-                                                                                            count_bits=size_compress-lenf%size_compress
-                                                                                            z=0
-                                                                                            if count_bits!=0:
-                                                                                                if count_bits!=size_compress:
-                                                                                                    while z<count_bits:
-                                                                                                        add_bits118="0"+add_bits118
-                                                                                                        z=z+1
-                                                                                                                        
-                                                                                                                        
-                                                                                            size_data30=size_data20
-                                                                                            bits=len(add_bits118)
-                                                                                            size_data25=bin(bits)[2:]
-                                                                                            lenf=len(size_data25)
-                                                                                            if lenf>6:
-                                                                                                print("File too big")
-                                                                                                raise SystemExit
-                                                                                                
-                                                                                                
-                                                                                            
-                                                                                            add_bits119=""
-                                                                                            count_bits=6-lenf%6
-                                                                                            z=0
-                                                                                            if count_bits!=0:
-                                                                                                if count_bits!=6:
-                                                                                                    while z<count_bits:
-                                                                                                        add_bits119="0"+add_bits119
-                                                                                                        z=z+1
-                                                                                                                        
-                                                                                                                        
-                                                                                            size_data19="1"+add_bits119+size_data25+size_data30+size_data19                                                	
+                                                                                    
+                                                                                                                             	
                                                                                     size_data6=size_data6+size_data4
                                                                                     
                                                                                     
@@ -433,7 +386,7 @@ class compression:
                                                          
                                                         
                 
-                                                    size_data3=size_data6
+                                                    size_data3="11111111"+size_data6
                                                     
                                                     Where4=0
                                                     
