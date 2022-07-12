@@ -12,6 +12,6 @@ long of zeros long (2**63)-1. if block
 not compress and string  move and there are exist
 "01" on the cell 1 need to write where it is. times  of compression.Blocks long need increase from 
 16 bits-while increase size of block compare 
-size of file.Add 1. Save Times of times of compression.
+size of file.Add 11111111. Save Times of times of compression.
 Add 1 on the start and 0-7 zeros. Binary file 
 format .bin.
