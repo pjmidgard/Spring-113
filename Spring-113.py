@@ -272,58 +272,7 @@ class compression:
                                                                                   
                                                                          
                                                                                      
-                                                                                    
-                                                                                         
-                                                                                    sub_info1="01" 
-                                                                                                                     
-                                                                                    find_matches2=str_find_tree_maches.find(sub_info1, start, end)
-                                                                                    find_matches1_2=int(find_matches2)
-                                                                                    if find_matches1_2==0:
-                                                                                        
-                                                                                        
-                                                                                        if Where4!=0:
-                                                                                    
-                                                                                            size_data20=bin(Where4)[2:]
-                                                                                            lenf=len(size_data20)
-                                                                                            if lenf>size_compress:
-                                                                                                print("File too big")
-                                                                                                raise SystemExit
-                                                                                                
-                                                                                                
-                                                                                            
-                                                                                            add_bits118=""
-                                                                                            count_bits=size_compress-lenf%size_compress
-                                                                                            z=0
-                                                                                            if count_bits!=0:
-                                                                                                if count_bits!=size_compress:
-                                                                                                    while z<count_bits:
-                                                                                                        add_bits118="0"+add_bits118
-                                                                                                        z=z+1
-                                                                                                                        
-                                                                                                                        
-                                                                                            size_data30=size_data20
-                                                                                            bits=len(add_bits118)
-                                                                                            size_data25=bin(bits)[2:]
-                                                                                            lenf=len(size_data25)
-                                                                                            if lenf>6:
-                                                                                                print("File too big")
-                                                                                                raise SystemExit
-                                                                                                
-                                                                                                
-                                                                                            
-                                                                                            add_bits119=""
-                                                                                            count_bits=6-lenf%6
-                                                                                            z=0
-                                                                                            if count_bits!=0:
-                                                                                                if count_bits!=6:
-                                                                                                    while z<count_bits:
-                                                                                                        add_bits119="0"+add_bits119
-                                                                                                        z=z+1
-                                                                                                                        
-                                                                                                                        
-                                                                                            size_data19="1"+add_bits119+size_data25+size_data30+size_data19
-                                                                                            
-                                                                                            Find=0
+
 
                                                                                     
                                                                                     
