@@ -184,6 +184,7 @@ class compression:
                                 Long_block4=0
                                 Long_block5=0
                                 Long_block6=0
+                                Long_block7=0
                                
                               
                                 times_of_times=0
@@ -499,7 +500,8 @@ class compression:
                                                                                                                     
                                         size_data9=add_bits118+size_data24+size_data9
                                        
-                                        size_data24=bin(Long_block1)[2:]                                        
+                                        size_data24=bin(Long_block1)[2:]  
+                                    	                                    
                                         lenf=len(size_data24)
                                         if lenf>40:
                                                 print("File too big")
@@ -571,8 +573,15 @@ class compression:
                                                     z=z+1
                                                     
                                         size_data9=add_bits118+size_data24+size_data9
+                                        size_data_save=size_data9
                                         
-                                      
+                                        if   Long_block1>0:
+                                        	size_data9=size_data_save
+                                        	size_data_save_finish=size_data_save
+                                        if   Long_block1==0:
+                                        	size_data9=size_data_save_finish
+                                        	
+                                        	Long_block7=1			
                                         Long_block1=0
                                         Long_block2=0
                                         Long_block3=0
@@ -582,9 +591,9 @@ class compression:
                                         
                                         long_file=len(size_data10)
                                         long_after=len(size_data9)
-                                        #print(long_after)
                                         
-                                        if long_file>long_after and long_after<=400 and Long_block1>=0  or lenf>39 or long_block>=long_after:
+                                        
+                                        if long_file>long_after and long_after<=400 or  Long_block7==1 or lenf>39 or long_block>=long_after:
                                           
                                             size_data11=size_data9
                                             Find_guess=1
