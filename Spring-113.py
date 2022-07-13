@@ -573,7 +573,7 @@ class compression:
                                                     z=z+1
                                                     
                                         size_data9=add_bits118+size_data24+size_data9
-                                        size_data_save=size_data9
+                                       
                                         
                                         
                                         	
