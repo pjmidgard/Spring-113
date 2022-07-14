@@ -269,7 +269,10 @@ class compression:
                                            
                                                                                     if find_matches1_1==0:
 
-                                                                                        size_data4=str_find_tree_maches[:0]+"01"+str_find_tree_maches[4:] 
+                                                                                        
+                                                                                        Block_Finds=1
+                                                                                         
+                                                                                        
                                                                                         
                                                                                        
                                                                                         
@@ -359,7 +362,9 @@ class compression:
                                                                                     	
                                                                                     	                                                                                    
                                                                                     
-                                                                                    size_data6+size_data6+size_data4                                                     
+                                                                                        
+                                                                                    size_data4=str_find_tree_maches[:0]+"01"+str_find_tree_maches[4:]
+                                                                                    size_data6+size_data6+size_data4                                          
                                                                               
                                                                                     size_data5=""
                                                                                     size_data7=""
