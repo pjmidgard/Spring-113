@@ -201,7 +201,7 @@ class compression:
                                     long2=len(size_data3)
                                     Deep=long2//28
                                     times2=Deep
-                                    long_block=16
+                                    long_block=1024
                                     Where5=0
                                 
                                     
@@ -355,7 +355,9 @@ class compression:
                                                                                     	
                                                                                     	
                                                                                     if Long_block5>=1:
-                                                                                    	Long_block3=len(size_data4)                                                                                    
+                                                                                    	Long_block3=len(size_data4)
+                                                                                    	
+                                                                                    	                                                                                    
                                                                                     
                                                                                     size_data6+size_data6+size_data4                                                     
                                                                               
