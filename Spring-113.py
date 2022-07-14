@@ -369,7 +369,7 @@ class compression:
                                                                                 elif Find==0:
                                                                                     compress_no=compress_no+1
                                                                                     Long_block6=Long_block6+1
-                        #print(compress_no)
+                                                                                    #print(compress_no)
                                                                                 
                                                                                     block_compression=0
                                                                                     block_compression1=0
