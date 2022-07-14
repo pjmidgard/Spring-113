@@ -268,9 +268,12 @@ class compression:
                                                                                     find_matches1_number1=int(find_matches1)
                                            
                                                                                     if find_matches1_1==0:
+                                                                                    	Find=1  
 
+                                                                                    if find_matches1_1!=0:
+                                                                                    	Find=0  
                                                                                         
-                                                                                        Block_Finds=1
+                                                                                      
                                                                                          
                                                                                         
                                                                                         
