@@ -201,7 +201,7 @@ class compression:
                                     long2=len(size_data3)
                                     Deep=long2//28
                                     times2=Deep
-                                    long_block=1024
+                                    long_block=long2//819
                                     Where5=0
                                 
                                     
@@ -270,8 +270,6 @@ class compression:
                                                                                     if find_matches1_1==0:
                                                                                     	Find=1  
 
-                                                                                    if find_matches1_1!=0:
-                                                                                    	Find=0  
                                                                                         
                                                                                       
                                                                                          
@@ -597,22 +595,23 @@ class compression:
                                         
                                         long_file=len(size_data10)
                                         long_after=len(size_data9)
+                                        print(long_after) 
                                         
-                                        
-                                        if long_file>long_after and long_after<=400 or lenf>39 or long_block>=long_after:
-                                          
+                                        if long_file>long_after and long_after<=400 or lenf>39 or long_file<=long_after:
+                                           
                                             size_data11=size_data9
                                             Find_guess=1
-                                        elif long_file<=long_after:
-                                            size_data3=size_data10
+                                        elif long_block>=long_after:
+                                            size_data3=size_data9
                                             long_block=long_block+1
-                                            
+                                            times_of_times=times_of_times+1
                                             size_data9=""
                                             size_data19=""
                                             start=-1
                                             times_compression=0
-                                            predict=-1
-                                            
+                                            predict=-1	
+                                      
+                                               
                                         elif long_file>long_after:
                                             size_data3=size_data9
                                             long_block=long_block+1
