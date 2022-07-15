@@ -601,6 +601,7 @@ class compression:
                                            
                                             size_data11=size_data9
                                             Find_guess=1
+                                            times_of_times=times_of_times+1
                                         elif long_block>=long_after:
                                             size_data3=size_data9
                                             long_block=long_block+1
@@ -639,8 +640,9 @@ class compression:
                                                 add_bits118="0"+add_bits118
                                                 z=z+1
                                                                                                                     
-                                                                                                                    
+                                                                                                                                
                                     size_data11=add_bits118+size_data24+size_data11
+                                    
                                     
                                     n = int(size_data11, 2)
                                 
