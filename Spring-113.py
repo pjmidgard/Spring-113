@@ -201,7 +201,7 @@ class compression:
                                     long2=len(size_data3)
                                     Deep=long2//28
                                     times2=Deep
-                                    long_block=long2//819
+                                    long_block=long2//8
                                     Where5=0
                                 
                                     
@@ -595,7 +595,7 @@ class compression:
                                         
                                         long_file=len(size_data10)
                                         long_after=len(size_data9)
-                                        print(long_after) 
+                                        #print(long_after) 
                                         
                                         if long_file>long_after and long_after<=400 or lenf>39 or long_file<=long_after:
                                            
