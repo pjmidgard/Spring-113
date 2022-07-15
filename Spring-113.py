@@ -267,11 +267,12 @@ class compression:
                                                                                     
                                                                                     find_matches1_number1=int(find_matches1)
                                            
-                                                                                    if find_matches1_1==0:
-                                                                                    	Find=1  
+                                                                                    if find_matches1_1!=0:
+                                                                                    	Find=0  
 
-                                                                                        
-                                                                                      
+                                                                                    if find_matches1_1==0:
+                                                                                    	Find=1                                                                                      
+                                                                                       
                                                                                          
                                                                                         
                                                                                         
@@ -546,7 +547,7 @@ class compression:
                                         long_after=len(size_data9)
                                         #print(long_after) 
                                         
-                                        if long_file>long_after and long_after<=232 or lenf>39 or long_file<=long_after:
+                                        if long_file>long_after or lenf>39 or Long_block2>=long_after:
                                            
                                             size_data11=size_data9
                                             Find_guess=1
