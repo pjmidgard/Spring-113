@@ -201,7 +201,7 @@ class compression:
                                     long2=len(size_data3)
                                     Deep=long2//28
                                     times2=Deep
-                                    long_block=long2//8
+                                    long_block=16
                                     Where5=0
                                 
                                     
@@ -468,6 +468,7 @@ class compression:
                                         size_data9=add_bits118+size_data9
 
                                         size_data24=bin(times_compression)[2:]
+                                       
                                         lenf=len(size_data24)
                                         if lenf>40:
                                                 print("File too big")
